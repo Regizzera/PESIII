@@ -1,11 +1,22 @@
 name: Exemplo da aula de PESIII - by Slmn
 on: [push]
 jobs:
- Descobrindo-o-github-actions-workflow:
-  runs-on: ubuntu-latest
-  steps:
-   - run: echo "${{ github.event_name}} evento disparado para esse job"
-   - run: echo " O sistema ${{ runner.os }} esta rodando"
-   - run: echo "Repo-name ${{ github.repository }}"
-   - run: echo "Repo-branch ${{ github.ref }}"
+   Descobrindo-o-github-actions-workflow:
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "${{ github.event_name}} evento disparado para esse job"
+     - run: echo " O sistema ${{ runner.os }} esta rodando"
+     - run: echo "Repo-name ${{ github.repository }}"
+     - run: echo "Repo-branch ${{ github.ref }}"
+   
+   Mostrando_o_repositorio:
+        name: Segundo job
+        runs-on: ubuntu-18.04
+        steps:
+          - run: echo "Repo-name ${{ github.repository}}"
+          - run: echo "Repo-branch ${{ github.reg}}"
+          - run: echo "O sistema ${{ runner.os }} esta rodando"
+      
+     
+     
    
