@@ -5,3 +5,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - run: echo "${{ github.event_name}} evento disparado para esse job"
+   - run: echo " O sistema ${{ runner.os }} esta rodando"
+   - run: echo "Repo-name ${{ github.repository }}"
+   - run: echo "Repo-branch ${{ github.ref }}"
+   
