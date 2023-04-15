@@ -1,0 +1,7 @@
+name: Exemplo da aula de PESIII - by Slmn
+on: [push]
+jobs:
+ Descobrindo-o-github-actions-workflow:
+  runs-on: ubuntu-latest
+  steps:
+   - run: echo "${{ github.event_name}} evento disparado para esse job"
