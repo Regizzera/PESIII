@@ -8,15 +8,21 @@ jobs:
      - run: echo " O sistema ${{ runner.os }} esta rodando"
      - run: echo "Repo-name ${{ github.repository }}"
      - run: echo "Repo-branch ${{ github.ref }}"
+     - run: time
    
    Mostrando_o_repositorio:
         name: Segundo job
-        runs-on: ubuntu-18.04
+        runs-on: windows-latest
         steps:
           - run: echo "Repo-name ${{ github.repository}}"
           - run: echo "Repo-branch ${{ github.reg}}"
           - run: echo "O sistema ${{ runner.os }} esta rodando"
-      
+          - run: date
+          - run: time
+          
+          
+    Mostrando_o_repositorio_mac_os
+    
      
      
    
